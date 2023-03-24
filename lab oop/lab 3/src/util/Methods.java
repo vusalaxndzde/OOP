@@ -148,6 +148,17 @@ public class Methods {
         System.out.println(sum);
     }
 
+    // 15.  Write a program that accepts 10 numbers from the user and prints the sum of all the numbers that are higher than 10 and smaller than 30.
+    public static void printSumArrLow30Great10(int[] arr) {
+        int sum = 0;
+        for (int i : arr) {
+            if (i < 30 && i > 10) {
+                sum += i;
+            }
+        }
+        System.out.println(sum);
+    }
+
 }
 
 
