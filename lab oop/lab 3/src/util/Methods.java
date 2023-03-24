@@ -75,8 +75,78 @@ public class Methods {
         }
     }
 
-    
+    // 8.  Write a program that accepts 10 numbers and prints all the numbers that are higher than 50, smaller than 100 and even.
+    public static void task8(int[] arr) {
+        for (int i : arr) {
+            if (i > 50 && i < 100 && i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
 
+    // 9.  Write a program that accepts 10 numbers and print how many are higher than 20.
+    public static void task9(int[] arr) {
+        int count = 0;
+        for (int i : arr) {
+            if (i > 20) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    // 10.  Write a program that accepts 10 numbers from the user and prints how many are higher than 10 and smaller than 20.
+    public static void task10(int[] arr) {
+        int count = 0;
+        for (int i : arr) {
+            if (i < 20 && i > 10) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    // 11.  Write a program that accepts 10 numbers and prints how many are higher than 10, smaller than 40 and odds.
+    public static void task11(int[] arr) {
+        int count = 0;
+        for (int i : arr) {
+            if (i < 40 && i > 10 && i % 2 == 1) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    // 12.  Write a program that accepts 10 numbers from the user and prints their sum.
+    public static void printSumArr(int[] arr) {
+        int sum = 0;
+        for (int i : arr) {
+            sum += i;
+        }
+        System.out.println(sum);
+    }
+
+    // 13.  Write a program that accepts 10 numbers and prints the sum of all the numbers that are higher than 20.
+    public static void printSumArrGreat20(int[] arr) {
+        int sum = 0;
+        for (int i : arr) {
+            if (i > 20) {
+                sum += i;
+            }
+        }
+        System.out.println(sum);
+    }
+
+    // 14.  Write a program that accepts 10 numbers and prints the sum of all the numbers that are smaller than 20.
+    public static void printSumArrLow20(int[] arr) {
+        int sum = 0;
+        for (int i : arr) {
+            if (i < 20) {
+                sum += i;
+            }
+        }
+        System.out.println(sum);
+    }
 
 }
 
