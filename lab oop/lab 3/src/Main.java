@@ -7,6 +7,10 @@ public class Main {
         printMaxOdd(new int[]{1,2,3,9,4,5,6,7});
 
         printMax(new int[]{1,2,3,9,4,5,6,7});
+
+        printMin(new int[]{1,2,3,9,4,5,6,7,0});
+
+        task5();
     }
 
 }
