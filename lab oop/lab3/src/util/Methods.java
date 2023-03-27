@@ -275,19 +275,15 @@ public class Methods {
         System.out.print("Enter the number of natural numbers: ");
         int count = scanner.nextInt();
 
-        int[] numbers = new int[count];
+        int min = Integer.MAX_VALUE;
         for (int i = 0; i < count; i++) {
             System.out.print("Enter a natural number: ");
-            numbers[i] = scanner.nextInt();
-        }
-
-        int minimum = numbers[0];
-        for (int i = 1; i < count; i++) {
-            if (numbers[i] < minimum) {
-                minimum = numbers[i];
+            int num = scanner.nextInt();
+            if (num < min) {
+                min = num;
             }
         }
-        System.out.println(minimum);
+        System.out.println(min);
     }
 
 }
