@@ -122,42 +122,50 @@ public class Methods {
     }
 
     // 10.  Write a program that accepts 10 numbers from the user and prints how many are higher than 10 and smaller than 20.
-    public static void task10(int[] arr) {
-        int count = 0;
-        for (int i : arr) {
-            if (i < 20 && i > 10) {
-                count++;
+    public static void task10() {
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 10 && num < 20) {
+                System.out.println(num);
             }
         }
-        System.out.println(count);
     }
 
     // 11.  Write a program that accepts 10 numbers and prints how many are higher than 10, smaller than 40 and odds.
-    public static void task11(int[] arr) {
-        int count = 0;
-        for (int i : arr) {
-            if (i < 40 && i > 10 && i % 2 == 1) {
-                count++;
+    public static void task11() {
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 10 && num < 40 && num % 2 == 1) {
+                System.out.println(num);
             }
         }
-        System.out.println(count);
     }
 
     // 12.  Write a program that accepts 10 numbers from the user and prints their sum.
-    public static void printSumArr(int[] arr) {
+    public static void printSumArr() {
+        Scanner scanner = new Scanner(System.in);
         int sum = 0;
-        for (int i : arr) {
-            sum += i;
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            sum += num;
         }
         System.out.println(sum);
     }
 
     // 13.  Write a program that accepts 10 numbers and prints the sum of all the numbers that are higher than 20.
-    public static void printSumArrGreat20(int[] arr) {
+    public static void printSumArrGreat20() {
+        Scanner scanner = new Scanner(System.in);
         int sum = 0;
-        for (int i : arr) {
-            if (i > 20) {
-                sum += i;
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 20) {
+                sum += num;
             }
         }
         System.out.println(sum);
