@@ -47,11 +47,14 @@ public class Methods {
     }
 
     // 4.  Write a program that receives 10 numbers and prints the minimum
-    public static void printMin(int[] arr) {
-        int min = arr[0];
-        for (int i : arr) {
-            if (i < min) {
-                min = i;
+    public static void printMin() {
+        Scanner scanner = new Scanner(System.in);
+        int min = Integer.MAX_VALUE;
+        for (int i = 1; i < 11; i++) {
+            System.out.print("Enter number " + (i) + ": ");
+            int num = scanner.nextInt();
+            if (num < min) {
+                min = num;
             }
         }
         System.out.println(min);
@@ -69,37 +72,49 @@ public class Methods {
     }
 
     // 6.  Write a program that accepts 10 numbers and prints the number only if it's higher than 50.
-    public static void task6(int[] arr) {
-        for (int i : arr) {
-            if (i > 50) {
-                System.out.println(i);
+    public static void task6() {
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 50) {
+                System.out.println(num);
             }
         }
     }
 
     // 7.  Write a program that accepts 10 number and prints the numbers that are higher than 50 and smaller than 100.
-    public static void task7(int[] arr) {
-        for (int i : arr) {
-            if (i > 50 && i < 100) {
-                System.out.println(i);
+    public static void task7() {
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 50 && num < 100) {
+                System.out.println(num);
             }
         }
     }
 
     // 8.  Write a program that accepts 10 numbers and prints all the numbers that are higher than 50, smaller than 100 and even.
-    public static void task8(int[] arr) {
-        for (int i : arr) {
-            if (i > 50 && i < 100 && i % 2 == 0) {
-                System.out.println(i);
+    public static void task8() {
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 50 && num < 100 && num % 2 == 0) {
+                System.out.println(num);
             }
         }
     }
 
     // 9.  Write a program that accepts 10 numbers and print how many are higher than 20.
-    public static void task9(int[] arr) {
+    public static void task9() {
+        Scanner scanner = new Scanner(System.in);
         int count = 0;
-        for (int i : arr) {
-            if (i > 20) {
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 20) {
                 count++;
             }
         }
