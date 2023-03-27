@@ -172,51 +172,65 @@ public class Methods {
     }
 
     // 14.  Write a program that accepts 10 numbers and prints the sum of all the numbers that are smaller than 20.
-    public static void printSumArrLow20(int[] arr) {
+    public static void printSumArrLow20() {
+        Scanner scanner = new Scanner(System.in);
         int sum = 0;
-        for (int i : arr) {
-            if (i < 20) {
-                sum += i;
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num < 20) {
+                sum += num;
             }
         }
         System.out.println(sum);
     }
 
     // 15.  Write a program that accepts 10 numbers from the user and prints the sum of all the numbers that are higher than 10 and smaller than 30.
-    public static void printSumArrLow30Great10(int[] arr) {
+    public static void printSumArrLow30Great10() {
+        Scanner scanner = new Scanner(System.in);
         int sum = 0;
-        for (int i : arr) {
-            if (i < 30 && i > 10) {
-                sum += i;
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 10 && num < 30) {
+                sum += num;
             }
         }
         System.out.println(sum);
     }
 
     // 16.  Write a program that accepts 10 numbers from the user and prints the sum of all the numbers that are higher than 10, smaller than 30 and even.
-    public static void task16(int[] arr) {
+    public static void task16() {
+        Scanner scanner = new Scanner(System.in);
         int sum = 0;
-        for (int i : arr) {
-            if (i < 30 && i > 10 && i % 2 == 0) {
-                sum += i;
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > 10 && num < 30 && num % 2 == 0) {
+                sum += num;
             }
         }
         System.out.println(sum);
     }
 
     // 17.  Write a program that accepts the weight of 40 students. Print the maximum weight under 50kg.
-    public static void task17(int[] arr) {
+    public static void task17() {
+        Scanner scanner = new Scanner(System.in);
         int max = 0;
-        for (int i : arr) {
-            if (i > max && i < 50) {
-                max = i;
+        for (int i = 0; i < 40; i++) {
+            System.out.print("Enter weight " + (i+1) + ": ");
+            int num = scanner.nextInt();
+            if (num > max && num < 50) {
+                max = num;
             }
         }
         System.out.println(max);
     }
 
     // 18.  Write a program that accepts a positive number and prints all the smaller positive numbers that can be divided by 2.
-    public static void task18(int a) {
+    public static void task18() {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
         for (int i = 0; i < a; i++) {
             if (i % 2 == 0) {
                 System.out.println(i);
@@ -225,7 +239,9 @@ public class Methods {
     }
 
     // 19.  Write a program that accepts a number and prints all the smaller positive numbers that can't be divided by 2.
-    public static void task19(int a) {
+    public static void task19() {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
         for (int i = 0; i < a; i++) {
             if (i % 2 == 1) {
                 System.out.println(i);
