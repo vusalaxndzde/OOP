@@ -51,6 +51,24 @@ public class Methods {
         }
     }
 
+    // Write a program that accepts 10 numbers in array. Print only the elements in the indexes that can be divided by 3. (0, 3, 6, 9…)
+    public static void task6(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (i % 3 == 0) {
+                System.out.println(arr[i]);
+            }
+        }
+    }
+
+    // Write a program that accepts 10 numbers in array. Print only the elements that their values can be divided by 3.
+    public static void task7(int[] arr) {
+        for (int i : arr) {
+            if (i % 3 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
     
 
 }
