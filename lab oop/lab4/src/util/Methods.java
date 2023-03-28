@@ -96,4 +96,24 @@ public class Methods {
         }
     }
 
+    // Write a program that accepts 10 numbers in array. Print how many even numbers exist in the array.
+    public static void task11(int[] arr) {
+        int count = 0;
+        for (int i : arr) {
+            if (i % 2 == 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    // Write a program that accepts 15 numbers in array. Print the elements’ sum.
+    public static void task12(int[] arr) {
+        int sum = 0;
+        for (int i : arr) {
+            sum += i;
+        }
+        System.out.println(sum);
+    }
+
 }
