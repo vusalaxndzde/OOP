@@ -69,6 +69,31 @@ public class Methods {
         }
     }
 
-    
+    // Write a program that accepts 10 numbers in array. Print only the elements that their values can’t be divided by 3.
+    public static void task8(int[] arr) {
+        for (int i : arr) {
+            if (i % 3 == 1) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    // Write a program that accepts 5 numbers in array. Print only the elements that their values can’t be divided by 3 or 2.
+    public static void task9(int[] arr) {
+        for (int i : arr) {
+            if (i % 3 == 1 || i % 2 == 1) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    // Write a program that accepts an array and a number “x”. Print all the elements that are smaller than “x”.
+    public static void task10(int[] arr, int x) {
+        for (int i : arr) {
+            if (i < x) {
+                System.out.println(i);
+            }
+        }
+    }
 
 }
