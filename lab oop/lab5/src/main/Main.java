@@ -1,16 +1,15 @@
 package main;
 
-import entity.Manager;
-import entity.Programmer;
+import bean.Employee;
+import bean.Manager;
+import bean.Programmer;
+
 public class Main {
-
     public static void main(String[] args) {
-        Programmer pr = new Programmer("java");
-        Manager m = new Manager(50);
-        pr.greeting();
-        pr.writeCode();
-        m.greeting();
-        m.report();
-    }
+        Employee programmer = new Programmer(1, "Elon", "Musk", "backend developer", "p1");
+        System.out.println(programmer);
 
+        Employee manager = new Manager(1, "Steve", "Jobs", "manager at Apple", "m1");
+        System.out.println(manager);
+    }
 }
