@@ -40,7 +40,7 @@ public class Triangle extends Shape {
     public String toString() {
         return "Triangle{" +
                 "color=" + getColor() +
-                "base=" + base +
+                ", base=" + base +
                 ", height=" + height +
                 '}';
     }

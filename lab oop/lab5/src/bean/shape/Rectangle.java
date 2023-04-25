@@ -40,7 +40,7 @@ public class Rectangle extends Shape {
     public String toString() {
         return "Rectangle{" +
                 "color=" + getColor() +
-                "length=" + length +
+                ", length=" + length +
                 ", width=" + width +
                 '}';
     }
