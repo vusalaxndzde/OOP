@@ -1,4 +1,4 @@
-package bean;
+package bean.work;
 
 public interface Trainable {
 }

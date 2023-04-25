@@ -1,6 +1,8 @@
 package main;
 
-import bean.*;
+import bean.work.Employee;
+import bean.work.Manager;
+import bean.work.Programmer;
 
 public class Main {
 
